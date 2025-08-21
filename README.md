@@ -45,4 +45,4 @@ raco test crc32.rkt
 
 ## License
 
-LGPL-3.0-or-later
+MIT
