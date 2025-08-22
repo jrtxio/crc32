@@ -3,9 +3,9 @@
 crc32
 
 Contributors:
-  [Ji Ren] <jirentianxiang1024@gmail.com>
+  [jrtxio] <jirentianxiang1024@gmail.com>
 
-Copyright (c) 2025 [Ji Ren]
+Copyright (c) 2025 [jrtxio]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

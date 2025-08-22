@@ -4,7 +4,7 @@
                     racket/base]]
 
 @title{CRC32}
-@author{Ji Ren}
+@author{jrtxio}
 
 @defmodule[crc32]
 
