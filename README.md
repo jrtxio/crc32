@@ -1,9 +1,10 @@
 # CRC32
 
-![Language](https://img.shields.io/badge/language-Racket-red) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)  [![English](https://img.shields.io/badge/lang-English-blue)](README.md) [![中文](https://img.shields.io/badge/lang-中文-red)](README.zh-CN.md)
+CRC32 (IEEE 802.3) checksum implementation for Racket. Computes CRC32 checksums for byte strings, strings in various encodings, and input ports, with a low-level API for incremental computation.
 
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-CRC32 (IEEE 802.3) checksum implementation for Racket. Computes CRC32 checksums for byte strings, strings in various encodings, and input ports. Also provides a low-level API for incremental computation.
+**English** · [中文](README.zh-CN.md)
 
 ## Installation
 
@@ -61,7 +62,7 @@ All functions return an `exact-nonnegative-integer?`.
 | `(crc32-update acc byte)` | Update accumulator with a single byte |
 | `(crc32-finalize acc)` | Apply final XOR to produce the checksum |
 
-## Testing
+## Development
 
 ```bash
 raco test main.rkt
@@ -75,4 +76,4 @@ The test suite covers standard test vectors, boundary cases, repeated patterns, 
 
 ## License
 
-[MIT](LICENSE)
+Released under the [MIT License](LICENSE).

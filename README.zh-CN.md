@@ -1,8 +1,10 @@
 # CRC32
 
-[English](README.md) | [中文](README.zh-CN.md)
-
 Racket 的 CRC32（IEEE 802.3）校验和实现。支持对字节串、多种编码的字符串以及输入端口计算 CRC32 校验和，同时提供用于增量计算的低级 API。
+
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+[English](README.md) · **中文**
 
 ## 安装
 
@@ -10,7 +12,7 @@ Racket 的 CRC32（IEEE 802.3）校验和实现。支持对字节串、多种编
 raco pkg install crc32
 ```
 
-## 用法
+## 使用
 
 ```racket
 #lang racket
@@ -60,7 +62,7 @@ raco pkg install crc32
 | `(crc32-update acc byte)` | 用单个字节更新累加器 |
 | `(crc32-finalize acc)` | 应用最终 XOR 得到校验和 |
 
-## 测试
+## 开发
 
 ```bash
 raco test main.rkt
@@ -74,4 +76,4 @@ raco test main.rkt
 
 ## 许可证
 
-[MIT](LICENSE)
+基于 [MIT License](LICENSE) 开源。
