@@ -2,17 +2,38 @@
 
 CRC32 (IEEE 802.3) checksum implementation for Racket. Computes CRC32 checksums for byte strings, strings in various encodings, and input ports, with a low-level API for incremental computation.
 
-![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **English** · [中文](README.zh-CN.md)
 
-## Installation
+## Features
+
+- **High-level API** — compute CRC32 of byte strings, UTF-8 / Latin-1 / locale-encoded strings, and input ports
+- **Incremental computation** — low-level API to update an accumulator byte-by-byte and finalize the checksum
+- **Broad test coverage** — standard test vectors, boundary cases, ASCII/UTF-8 (CJK, emoji, Cyrillic, Arabic, Greek), large data, and binary file headers
+
+## Requirements
+
+| Dependency | Purpose / Version |
+|------------|-------------------|
+| Racket | 7.0 or later |
+
+## Quick Start
+
+### 1. Clone
+
+```bash
+git clone https://github.com/turinglambdaai/crc32.git
+cd crc32
+```
+
+### 2. Install
 
 ```bash
 raco pkg install crc32
 ```
 
-## Usage
+### 3. Usage
 
 ```racket
 #lang racket
@@ -70,10 +91,6 @@ raco test main.rkt
 
 The test suite covers standard test vectors, boundary cases, repeated patterns, incremental sequences, ASCII strings, UTF-8 strings (including CJK, emoji, Cyrillic, Arabic, and Greek), large data, binary file format headers, incremental computation, and input port functionality.
 
-## Requirements
-
-- Racket 7.0 or later
-
 ## License
 
-Released under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE).

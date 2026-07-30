@@ -2,17 +2,38 @@
 
 Racket 的 CRC32（IEEE 802.3）校验和实现。支持对字节串、多种编码的字符串以及输入端口计算 CRC32 校验和，同时提供用于增量计算的低级 API。
 
-![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 [English](README.md) · **中文**
 
-## 安装
+## 功能特性
+
+- **高级 API** —— 对字节串、UTF-8 / Latin-1 / 本地编码字符串以及输入端口计算 CRC32
+- **增量计算** —— 低级 API 支持逐字节更新累加器并最终生成校验和
+- **测试覆盖全面** —— 标准测试向量、边界情况、ASCII/UTF-8（中日韩、emoji、西里尔字母、阿拉伯字母、希腊字母）、大数据以及二进制文件头
+
+## 环境要求
+
+| 依赖 | 用途 / 版本 |
+|------|------------|
+| Racket | 7.0 或更高版本 |
+
+## 快速开始
+
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/turinglambdaai/crc32.git
+cd crc32
+```
+
+### 2. 安装
 
 ```bash
 raco pkg install crc32
 ```
 
-## 使用
+### 3. 使用
 
 ```racket
 #lang racket
@@ -69,10 +90,6 @@ raco test main.rkt
 ```
 
 测试套件覆盖标准测试向量、边界情况、重复模式、递增序列、ASCII 字符串、UTF-8 字符串（包括中日韩文字、emoji、西里尔字母、阿拉伯字母和希腊字母）、大数据、二进制文件格式头部、增量计算以及输入端口功能。
-
-## 环境要求
-
-- Racket 7.0 或更高版本
 
 ## 许可证
 
