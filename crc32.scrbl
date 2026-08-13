@@ -4,7 +4,7 @@
                     racket/base]]
 
 @title{CRC32}
-@author{jrtxio}
+@author{turinglambdaai}
 
 @defmodule[crc32]
 
